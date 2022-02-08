@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: auto;
+  padding: 50px;
+  padding-top: 10px;
+  gap: 10px;
+  box-shadow: 0 0px 15px 10px var(--black);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.title:not(:first-of-type) {
+  padding-top: 24px;
+}
+
+.movies {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  justify-content: center;
+  width: 100%;
+  min-height: 600px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-top: 160px;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.serie-name,
+.movie-name {
+  font-size: 72px;
+  font-weight: 900;
+  text-transform: uppercase;
+  filter: drop-shadow(0 0 10px #000);
+}
+
+.movie-name {
+  font-size: 64px;
+  font-weight: 500;
+  margin-top: -10px;
+}
+
+.state {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 20px;
+  font-weight: 400;
+  width: 50%;
+  letter-spacing: 1px;
+  filter: drop-shadow(0 0 10px #000);
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.buttons button {
+  width: 175px;
+  border-radius: 5px;
+  height: 62px;
+  font-size: 20px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 700;
+  background-color: #fff;
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px #000);
+}
+
+.darker-button {
+  width: 260px !important;
+  color: white;
+  background-color: rgba(255, 255, 255, 30%) !important;
+}

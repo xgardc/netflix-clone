@@ -15,7 +15,7 @@ export default function Home({ popularMovies, topMovies }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const popularRes = await fetch(
     "https://api.themoviedb.org/3/movie/popular?api_key=8797bca34eb34606ca41cd1bf5607aa9&language=tr-TR&page=1"
   );
